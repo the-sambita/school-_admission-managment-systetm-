@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admission.css">
+
+    <title>admission-form</title>
+</head>
+
+<body>
+    <div class="row">
+        <h1>Admission Form 2025</h1>
+    </div>
+    <form action="insert.php" method="post" enctype="multipart/form-data">
+        
+        <div class="form-container">
+            <div class="container">
+             
+                <div class="r1">
+                    <label for="fname">Full name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                </div>
+                <div class="r2">
+                    <label for="fathername">Father name:</label><br>
+                    <input type="text" id="" name="fatherName" required>
+                </div>
+
+                <div class="r3">
+                    <label for="mname">Mother name:</label><br>
+                    <input type="text" id="mname" name="mname" required><br>
+                </div>
+
+                <div class="r4">
+                    <label for="address">Address:-</label><br>
+                    <input type="text" id="add" name="add" required><br>
+                </div>
+
+                <div class="r5">
+                    <label for="Email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+
+                <div class="r6">
+                    <label for="mobileno.">Mobile No:-</label><br>
+                    <input type="number" id="mnum" name="mnum" required><br>
+                </div>
+
+                <div class="r7">
+                    <label for="dob">DOB:-</label><br>
+                    <input type="date" id="dob" name="dob" required><br>
+                </div>
+
+                <div class="r8">
+                    <label for="fname">Category:-
+                    </label><br>
+                    <select name="category" required>
+
+                        <option value="gender">Select your category</option>
+                        <option value="OBC">GENERAL</option>
+                        <option value="OBC">OBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="Others">Others</option>
+
+                    </select><br>
+                </div>
+
+                <div class="r9">
+                    <label for="gender">Gender:-</label><br>
+                    <select name="gender" required>
+                        <option value="gender">Select your category</option>
+                        <option value="female">MALE</option>
+                        <option value="female">FEMALE</option>
+                        <option value="transgender">TRANSGENDER</option>
+                        <option value="Lgbtq">LGBTQ</option>
+
+                    </select><br>
+                </div>
+
+                <div class="r10">
+                    <label for="class">Class:-</label><br>
+                    <select name="class">
+                        <option value="">Select Class</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+
+              
+
+
+
+  </div>
+          
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </div>
+        <div class="img-container">
+            <!-- Image Preview Left -->
+             <div id="img-preview">
+
+
+             </div>
+            <p>Upload Image: </p>
+            <input type="file" name="s-image" id="choose-file">
+            <!-- Signature Preview left  -->
+             <div id="sign-preview">
+
+             </div>
+             <p>Upload Signature: </p>
+             <input type="file" name="s-signature" id="choose-sign">
+
+        </div>
+   
+    </form>
+
+</body>
+<script src="admission.js"></script>
+
+</html>

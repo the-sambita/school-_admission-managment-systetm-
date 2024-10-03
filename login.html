@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    
+    <title>School Login</title>
+</head>
+<body>
+
+    <!--Login page-->
+    
+
+    <!--Nav Bar code-->
+    <div class="new-admission">
+        <div class="nav-cont">
+            <p class="nav-phn">Phone: +910999999</p>
+            <p>Email: VVM@gmail.com</p>
+        </div>
+        <a href="">NEW ADMISSION</a>
+    </div>
+    <div class="nav_bar">
+        <div class="nav_logo">
+            <img src="images/logo.png" alt="VVM" />
+            <h1>VINAPANI VIDYA MANDIR</h1>
+        </div>
+
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="activity.html">ACTIVITIES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html" class="btn">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--login-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+        }
+
+        .register-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            
+            
+
+        }
+
+        #rcontainer{
+            background: url("images/login.jpg");
+            background-repeat: no-repeat ;
+            background-size:cover;
+
+        }
+
+        .main {
+            width: 550px;
+            height: 500px;
+        
+            overflow: hidden;
+        
+            border-radius: 10px;
+            box-shadow: 25spx 20px 50px #041656;
+            -webkit-backdrop-filter: blur(8px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.75);
+            border-radius: 32px;
+            border: 2px solid white;
+        }
+
+        #chk {
+            display: none;
+        }
+
+        .signup {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        label {
+            color: #fff;
+            font-size: 2.3em;
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        input {
+            width: 60%;
+            height: 20px;
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 60%;
+            height: 40px;
+            margin: 10px auto;
+            justify-content: center;
+            display: block;
+            color: #fff;
+            background: #081647;
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 20px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            transition: .2s ease-in;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6d44b8;
+        }
+
+        .login {
+            height: 460px;
+            background: #eee;
+            border-radius: 60% / 10%;
+            transform: translateY(-180px);
+            transition: .8s ease-in-out;
+        }
+
+        .login label {
+            color: #573b8a;
+            transform: scale(.6);
+        }
+
+        #chk:checked~.login {
+            transform: translateY(-500px);
+        }
+
+        #chk:checked~.login label {
+            transform: scale(1);
+        }
+
+        #chk:checked~.signup label {
+            transform: scale(.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- main content for login/register -->
+    <div class="register-content" id="rcontainer">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+        
+    
+            <div class="signup">
+                <form action="signup.php" method="post">
+
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="username" placeholder="User name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="Password" required="">
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
+    
+            <div class="login">
+                <form action="login.php" method="post">
+                    <label for="chk" aria-hidden="true">Sign in</label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="password" placeholder="Password" required="">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+
+
+     <!--Footer section-->
+
+     <footer>
+        <div class="footer-main">
+            <div class="link">
+                <a href="https://rkmvdeoghar.org/index/page/75"><p><strong>Academic Resources for Vidya</strong></p>
+                <p><strong>Mandir Students</strong></p></a>
+                <a href="https://rkmvdeoghar.org/index/page/76"><p><strong> Academic Resources for Vidya</strong></p>
+                <p><strong>Teachers</strong></p></a>
+                <a href="https://rkmvdeoghar.org/index/page/77"><p><strong> Notes and Assignments for Vidya</strong></p>
+                <p><strong>Mandir Teachers</strong></p></a>
+                <a href="https://rkmvdeoghar.org/index/page/78"><p><strong> Links for General Information</strong></p></a>
+            </div>
+        <div class="footer-contact">
+            <p><strong> Contact Us Address : Vinapani Nagar,</strong></p>
+            <p><strong> Vidya Mandir Dist: Deoghar,</strong> </p>
+            <p><strong>Pin: 814112, Jharkhand, India </strong></p>
+            <p><strong>Phone: 8797066678, 9471395502/03</strong></p>
+            <p><strong>cpvidyamandir@gmail.com</strong></p>
+            <p><strong>Working Days/Hours: Mon - Sat / 9:00 AM-</strong></p>
+            <p><strong> 12:00 PM 2:30PM - 5 PM</strong></p>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p><strong>© 2024 Ramakrishna Mission Vidyapith. All Rights Reserved.</strong></p>
+    </div>
+    </footer>
+</body>
+</html>
